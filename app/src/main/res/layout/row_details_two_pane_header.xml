@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewData"
+            type="br.com.movies_tek.ui.details.vdos.rows.DetailsTwoPaneHeaderViewData" />
+    </data>
+
+    <FrameLayout
+        android:id="@+id/fl_details_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/detail_two_pane_header_height">
+
+        <ImageView
+            android:id="@+id/iv_details_backdrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/movie_backdrop"
+            android:scaleType="centerCrop"
+            app:backdropUrl="@{@string/movie_backdrop_url(viewData.backdrop)}" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/scrim_gradient" />
+
+        <TextView
+            android:id="@+id/tv_details_title"
+            style="@style/TextAppearance.AppCompat.Display2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/normal_space"
+            android:layout_marginEnd="@dimen/key_line_1"
+            android:layout_marginStart="@dimen/key_line_1"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@{viewData.title}" />
+    </FrameLayout>
+</layout>

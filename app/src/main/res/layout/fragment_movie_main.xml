@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewData"
+            type="br.com.movies_tek.ui.main.vdos.MainViewData" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".presentation.grid.onl.MovieGridOnlFragment">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/srlGrid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:enabled="@{viewData.refreshEnabled}"
+            app:colorScheme="@{@intArray/srl_color_scheme}"
+            app:refreshing="@{viewData.refreshing}">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvGrid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:scrollbars="vertical"
+                android:visibility="@{viewData.loading ? View.GONE : View.VISIBLE}" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <include
+            layout="@layout/include_pb_empty"
+            app:viewData="@{viewData}" />
+
+    </FrameLayout>
+</layout>

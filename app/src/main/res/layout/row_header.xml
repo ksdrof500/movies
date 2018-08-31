@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="viewData"
+            type="br.com.movies_tek.ui.common.contracts.HeaderRowViewData" />
+    </data>
+
+    <TextView
+        android:id="@+id/tv_header"
+        style="@style/SubHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sub_header_height"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/key_line_1"
+        android:paddingStart="@dimen/key_line_1"
+        android:text="@{viewData.header}" />
+</layout>

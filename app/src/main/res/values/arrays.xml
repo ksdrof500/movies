@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <integer-array name="srl_color_scheme" tools:keep="@array/srl_color_scheme">
+        <item>@color/red_500</item>
+        <item>@color/red_700</item>
+        <item>@color/amber_A400</item>
+    </integer-array>
+</resources>

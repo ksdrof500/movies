@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Spacing -->
+    <dimen name="key_line_1">16dp</dimen>
+    <dimen name="key_line_2">72dp</dimen>
+    <dimen name="small_space">8dp</dimen>
+    <dimen name="normal_space">16dp</dimen>
+
+    <!-- Movie Poster Grid -->
+    <dimen name="grid_padding">4dp</dimen>
+    <dimen name="grid_footer_two_line_height">68dp</dimen>
+
+    <!-- Movie Detail View -->
+    <dimen name="detail_poster_width">150dp</dimen>
+    <dimen name="detail_video_row_height">88dp</dimen>
+    <dimen name="detail_two_pane_header_height">280dp</dimen>
+
+    <!-- Toolbar -->
+    <dimen name="toolbar_height_x2" tools:keep="@dimen/toolbar_height_x2">112dp</dimen>
+    <dimen name="toolbar_height_x3" tools:keep="@dimen/toolbar_height_x3">168dp</dimen>
+    <dimen name="toolbar_height_x4" tools:keep="@dimen/toolbar_height_x4">224dp</dimen>
+    <dimen name="toolbar_height_x5">280dp</dimen>
+    <dimen name="toolbar_height_x6" tools:keep="@dimen/toolbar_height_x6">336dp</dimen>
+
+    <!-- SubHeader -->
+    <dimen name="sub_header_height">48dp</dimen>
+    <dimen name="sub_header_text_size">14sp</dimen>
+    <dimen name="title_text_size">30sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin" tools:keep="@dimen/activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin" tools:keep="@dimen/activity_vertical_margin">16dp</dimen>
+
+</resources>

@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Movie Dog</string>
+    <string name="movie_poster">Movie poster image</string>
+    <string name="movie_video_thumb">Movie video thumbnail image</string>
+    <string name="sort_popularity">Most popular</string>
+    <string name="sort_rating">Highest rated</string>
+    <string name="sort_release_date">Most recent</string>
+    <string name="movie_backdrop">Movie backdrop image</string>
+    <string name="header_info">Info</string>
+    <string name="shared_transition_details_poster">shared_poster</string>
+    <string name="title_activity_movie_details">Movie Details</string>
+    <string name="details_rating">"Rating: %1$s/10"</string>
+    <string name="snackbar_movies_load_failed">Failed to load movies</string>
+    <string name="snackbar_retry" tools:keep="@string/snackbar_retry">Retry</string>
+    <string name="no_movies">No movies</string>
+    <string name="sort_favorite">Favorites</string>
+    <string name="snackbar_movie_added_to_favorites">Added movie to favorites</string>
+    <string name="snackbar_movie_removed_from_favorites">Removed movie from favorites</string>
+    <string name="header_reviews">Reviews</string>
+    <string name="header_trailers">Trailers</string>
+    <string name="youtube_thumb_url">https://img.youtube.com/vi/%1$s/default.jpg"</string>
+    <string name="no_movie_selected">No movie selected</string>
+    <string name="snackbar_movie_no_data" tools:keep="@string/snackbar_movie_no_data">No data for this movie</string>
+    <string name="snackbar_movie_load_reviews_videos_failed">Failed to load reviews and trailers</string>
+    <string name="action_share" tools:keep="@string/action_share">Share</string>
+    <string name="snackbar_movie_insert_failed">Failed to mark movie as favoured</string>
+    <string name="snackbar_movie_updated">Updated movie details</string>
+    <string name="snackbar_movie_update_failed">Failed to update movie</string>
+    <string name="video_size">%1$sp</string>
+    <string name="movie_poster_url">http://image.tmdb.org/t/p/w185%1$s</string>
+    <string name="movie_backdrop_url">http://image.tmdb.org/t/p/w780%1$s</string>
+    <string name="snackbar_movie_delete_failed">Failed to unmark movie as favoured</string>
+
+    <string name="title_popular">Most popular</string>
+    <string name="title_highest">Highest rated</string>
+    <string name="title_favorites">My Favorites</string>
+</resources>

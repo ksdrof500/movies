@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Toolbar -->
+    <dimen name="toolbar_height_x2" tools:keep="@dimen/toolbar_height_x2">80dp</dimen>
+    <dimen name="toolbar_height_x3" tools:keep="@dimen/toolbar_height_x3">120dp</dimen>
+    <dimen name="toolbar_height_x4" tools:keep="@dimen/toolbar_height_x4">160dp</dimen>
+    <dimen name="toolbar_height_x5">200dp</dimen>
+    <dimen name="toolbar_height_x6" tools:keep="@dimen/toolbar_height_x6">240dp</dimen>
+
+    <!-- Movie Detail View -->
+    <dimen name="detail_two_pane_header_height">200dp</dimen>
+
+</resources>
