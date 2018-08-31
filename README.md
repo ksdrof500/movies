@@ -2,6 +2,7 @@
 App de movies for study kotlin avanced
 - He function also landscap.
 - UI tested hdpi, xhdpi, xxhdpi and Tablet
+- Pattern MVVM-Live
 
 ## Getting Started
 
