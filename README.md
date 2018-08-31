@@ -29,7 +29,7 @@ Execute build
 ## Built With
 
 * [Themoviedb](https://developers.themoviedb.org) - The API
-* [DataBinding](https://google.com) - The API
+* [DataBinding](https://google.com) - Framework using map view and input values
 * [Firebase](http://firebase.com/) - Platforme for Crash, TestLab and Analytics
 * [Google](https://google.com) - The framework, Lifecycle and Room, ViewModel
 * [Dagger](http://square.github.io/dagger/) - Dependency injector
