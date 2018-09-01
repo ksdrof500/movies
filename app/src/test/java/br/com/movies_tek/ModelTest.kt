@@ -96,18 +96,13 @@ class ModelTest {
                 .thenReturn(Single.just(MoviesPage(1, ratingMovies, 1, ratingMovies.size)))
         val ratingGridViewData = mapGridRowMovieViewData(ratingMovies)
 
-        val dateMovies = getMovies(7)
-        Mockito.`when`(theMovieDbService.loadMovies(1, SortOption.SORT_RELEASE_DATE.value))
-                .thenReturn(Single.just(MoviesPage(1, dateMovies, 1, dateMovies.size)))
-        val dateGridViewData = mapGridRowMovieViewData(dateMovies)
 
         val expectedStates = listOf(
                 MainState(sort = initialSort, loading = true),
                 MainState(sort = sortOptions[0], movies = popGridViewData, loading = false),
                 MainState(sort = sortOptions[1], movies = popGridViewData, loading = true),
                 MainState(sort = sortOptions[1], movies = ratingGridViewData, loading = false),
-                MainState(sort = sortOptions[2], movies = ratingGridViewData, loading = true),
-                MainState(sort = sortOptions[2], movies = dateGridViewData, loading = false)
+                MainState(sort = sortOptions[2], movies = ratingGridViewData, loading = true)
         )
 
         actions.accept(MainAction.SortSelection(sortOptions[0], initialSort))
