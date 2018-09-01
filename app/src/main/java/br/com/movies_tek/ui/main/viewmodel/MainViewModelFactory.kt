@@ -1,5 +1,3 @@
-
-
 package br.com.movies_tek.ui.main.viewmodel
 
 import android.arch.lifecycle.ViewModel

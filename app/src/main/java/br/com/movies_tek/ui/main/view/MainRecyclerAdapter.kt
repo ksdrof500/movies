@@ -28,8 +28,8 @@ data class SelectedMovie(
 )
 
 class GridRecyclerAdapter(
-        val posterHeight: Int,
-        val movieClicks: PublishRelay<SelectedMovie>
+        private val posterHeight: Int,
+        private val movieClicks: PublishRelay<SelectedMovie>
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     private val movies = mutableListOf<MainRowViewData>()
