@@ -18,7 +18,7 @@
     <string name="snackbar_movie_removed_from_favorites">Removed movie from favorites</string>
     <string name="header_reviews">Reviews</string>
     <string name="header_trailers">Trailers</string>
-    <string name="youtube_thumb_url">https://img.youtube.com/vi/%1$s/default.jpg"</string>
+    <string name="youtube_thumb_url" translatable="false">https://img.youtube.com/vi/%1$s/default.jpg"</string>
     <string name="no_movie_selected">No movie selected</string>
     <string name="snackbar_movie_no_data" tools:keep="@string/snackbar_movie_no_data">No data for this movie</string>
     <string name="snackbar_movie_load_reviews_videos_failed">Failed to load reviews and trailers</string>
@@ -26,9 +26,9 @@
     <string name="snackbar_movie_insert_failed">Failed to mark movie as favoured</string>
     <string name="snackbar_movie_updated">Updated movie details</string>
     <string name="snackbar_movie_update_failed">Failed to update movie</string>
-    <string name="video_size">%1$sp</string>
-    <string name="movie_poster_url">http://image.tmdb.org/t/p/w185%1$s</string>
-    <string name="movie_backdrop_url">http://image.tmdb.org/t/p/w780%1$s</string>
+    <string name="video_size" translatable="false">%1$sp</string>
+    <string name="movie_poster_url" translatable="false">http://image.tmdb.org/t/p/w185%1$s</string>
+    <string name="movie_backdrop_url" translatable="false">http://image.tmdb.org/t/p/w780%1$s</string>
     <string name="snackbar_movie_delete_failed">Failed to unmark movie as favoured</string>
 
     <string name="title_popular">Most popular</string>

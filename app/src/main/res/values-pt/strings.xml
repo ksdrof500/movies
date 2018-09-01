@@ -9,7 +9,7 @@
     <string name="header_info">Informação</string>
     <string name="shared_transition_details_poster">Compartilhar</string>
     <string name="title_activity_movie_details">Detalhes do vídeo</string>
-    <string name="details_rating">Avaliação</string>
+    <string name="details_rating">Avaliação: %1$s/10</string>
     <string name="snackbar_movies_load_failed">Falha ao carregar filmes</string>
     <string name="snackbar_retry">Novamente</string>
     <string name="no_movies">Sem vídeos</string>
