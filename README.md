@@ -2,6 +2,8 @@
 App de movies for study kotlin avanced
 - He function also landscap.
 - UI tested hdpi, xhdpi, xxhdpi and Tablet
+- Pattern MVVM-Live
+- English and Protuguese
 
 ## Getting Started
 
@@ -27,6 +29,7 @@ Execute build
 ## Built With
 
 * [Themoviedb](https://developers.themoviedb.org) - The API
+* [DataBinding](https://google.com) - Framework using map view and input values
 * [Firebase](http://firebase.com/) - Platforme for Crash, TestLab and Analytics
 * [Google](https://google.com) - The framework, Lifecycle and Room, ViewModel
 * [Dagger](http://square.github.io/dagger/) - Dependency injector
