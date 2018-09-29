@@ -43,6 +43,7 @@ Execute build
 * [Timber](https://github.com/JakeWharton/timber) - The framework for logs
 * [Coroutines](https://kotlinlang.org/docs/reference/coroutines.html) - The framework asynk tasks
 * [Mockito](https://github.com/mockito/mockito) - The framework for test
+* [Mugen](https://github.com/vinaysshenoy/mugeno) - Infinit scroll
 
 ## Authors
 
