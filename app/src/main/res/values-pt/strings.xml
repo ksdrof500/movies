@@ -26,6 +26,8 @@
     <string name="snackbar_movie_updated">Detalhes do filme atualizados</string>
     <string name="snackbar_movie_update_failed">Não foi possível atualizar o filme</string>
     <string name="snackbar_movie_delete_failed">Falha ao desmarcar filme como favorito</string>
+    <string name="error_internet_connection">Sem conexão com a internet</string>
+
     <string name="title_popular">Mais popular</string>
     <string name="title_highest">Melhor Avaliado</string>
     <string name="title_favorites">Meus Favoritos</string>

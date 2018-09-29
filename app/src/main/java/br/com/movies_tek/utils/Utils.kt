@@ -1,7 +1,10 @@
 package br.com.movies_tek.utils
 
 import android.content.res.Resources
+import android.graphics.Color
+import android.view.View
 import br.com.movies_tek.R
+import org.jetbrains.anko.design.longSnackbar
 
 private const val POSTER_ASPECT_RATIO = 0.675
 
@@ -28,3 +31,9 @@ private fun getLayoutWidth(res: Resources, useTwoPane: Boolean): Int = getScreen
 }
 
 private fun getScreenWidth(res: Resources): Int = res.displayMetrics.widthPixels
+
+fun longSnackbarRed(v: View, text: String) {
+    val ls = longSnackbar(v, text)
+    ls.view.setBackgroundColor(Color.parseColor("#FD3838"))
+    ls.show()
+}

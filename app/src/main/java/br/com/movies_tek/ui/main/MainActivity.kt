@@ -16,7 +16,7 @@ import br.com.movies_tek.ui.base.BaseFragment
 import br.com.movies_tek.ui.main.view.MainFragment
 import br.com.movies_tek.ui.main.viewmodel.MainViewModel
 import br.com.movies_tek.ui.main.viewmodel.MainViewModelFactory
-import br.com.movies_tek.utils.PopularMovies
+import br.com.movies_tek.MoviesApplication
 import br.com.movies_tek.utils.bindTo
 import br.com.movies_tek.utils.navigateTo
 import javax.inject.Inject
@@ -28,7 +28,7 @@ class MainActivity : BaseActivity(), BaseFragment.ActivityListener {
     lateinit var sharedPrefs: SharedPrefs
     @Inject
     lateinit var movieStorage: MovieStorage
-    private val component: ApplicationComponent by lazy { PopularMovies.getAppComponent(this) }
+    private val component: ApplicationComponent by lazy { MoviesApplication.getAppComponent(this) }
 
     private val binding by lazy {
         DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)

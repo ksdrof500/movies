@@ -37,12 +37,7 @@ class ModelTest {
     val movieDb: MovieDb = Mockito.mock(MovieDb::class.java)
     val movieStorage = MovieStorage(theMovieDbService, movieDb)
 
-    /*
-    * 0: by popularity
-    * 1: by rating
-    * 2: by release date
-    * 3: favorites
-    */
+
     val sortOptions = makeSortOptions { "someRandomTitle" }
     val initialSort = sortOptions[0]
     val actions: PublishRelay<MainAction> = PublishRelay.create()

@@ -30,8 +30,11 @@
     <string name="movie_poster_url" translatable="false">http://image.tmdb.org/t/p/w185%1$s</string>
     <string name="movie_backdrop_url" translatable="false">http://image.tmdb.org/t/p/w780%1$s</string>
     <string name="snackbar_movie_delete_failed">Failed to unmark movie as favoured</string>
+    <string name="error_internet_connection">Not connection</string>
+
 
     <string name="title_popular">Most popular</string>
     <string name="title_highest">Highest rated</string>
     <string name="title_favorites">My Favorites</string>
+    <string name="login_google">Login</string>
 </resources>

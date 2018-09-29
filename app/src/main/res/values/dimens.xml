@@ -30,4 +30,8 @@
     <dimen name="activity_horizontal_margin" tools:keep="@dimen/activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin" tools:keep="@dimen/activity_vertical_margin">16dp</dimen>
 
+    <!--Shape-->
+    <dimen name="stroke">2dp</dimen>
+    <dimen name="corner">6dp</dimen>
+
 </resources>

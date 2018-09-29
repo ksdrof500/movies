@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity
 import android.view.animation.AnimationUtils
 import br.com.movies_tek.R
 import br.com.movies_tek.databinding.ActivitySplashBinding
+import br.com.movies_tek.ui.login.view.LoginActivity
 import br.com.movies_tek.ui.main.MainActivity
 import kotlinx.coroutines.experimental.delay
 import kotlinx.coroutines.experimental.launch
@@ -15,7 +16,7 @@ import kotlinx.coroutines.experimental.launch
 
 class SplashActivity : AppCompatActivity() {
 
-    internal val intent by lazy { Intent(this, MainActivity::class.java) }
+    internal val intent by lazy { Intent(this, LoginActivity::class.java) }
     private val bundle by lazy {
         ActivityOptionsCompat.makeCustomAnimation(this,
                 android.R.anim.fade_in, android.R.anim.fade_out).toBundle()

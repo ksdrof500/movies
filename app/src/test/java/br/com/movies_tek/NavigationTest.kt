@@ -16,12 +16,6 @@ import org.junit.Test
 
 class NavigationTest {
 
-    /*
-    * 0: by popularity
-    * 1: by rating
-    * 2: by release date
-    * 3: favorites
-    */
     val sortOptions = makeSortOptions { "someRandomTitle" }
     val actions: PublishRelay<MainAction> = PublishRelay.create()
 

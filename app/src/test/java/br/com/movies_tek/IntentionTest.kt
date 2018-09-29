@@ -23,12 +23,6 @@ class IntentionTest {
     val sharedPrefs: SharedPrefs = Mockito.mock(SharedPrefs::class.java)
     val movieStorage = MovieStorage(Mockito.mock(TheMovieDbService::class.java), Mockito.mock(MovieDb::class.java))
 
-    /*
-    * 0: by popularity
-    * 1: by rating
-    * 2: by release date
-    * 3: favorites
-    */
     val sortOptions = makeSortOptions { "someRandomTitle" }
     val uiEvents = MainUiEvents()
     val sources = MainResources(uiEvents, sharedPrefs, movieStorage)

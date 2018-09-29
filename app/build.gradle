@@ -54,6 +54,8 @@ dependencies {
     implementation "android.arch.lifecycle:extensions:$archComponentsVersion"
     implementation "android.arch.lifecycle:reactivestreams:$archComponentsVersion"
     kapt "android.arch.lifecycle:compiler:$archComponentsVersion"
+
+
     implementation "android.arch.persistence.room:runtime:$archComponentsVersion"
     implementation "android.arch.persistence.room:rxjava2:$archComponentsVersion"
     kapt "android.arch.persistence.room:compiler:$archComponentsVersion"
@@ -84,7 +86,13 @@ dependencies {
     implementation 'com.vinaysshenoy:mugen:1.0.2'
 
     implementation 'com.crashlytics.sdk.android:crashlytics:2.9.5'
-    implementation 'com.google.firebase:firebase-core:16.0.1'
+    implementation "com.google.firebase:firebase-core:${firebaseVersion}"
+    implementation "com.google.firebase:firebase-auth:${firebaseVersion}"
+    implementation 'com.google.android.gms:play-services-auth:15.0.1'
+
+    implementation 'org.jetbrains.anko:anko-design:0.10.4'
+    implementation 'com.android.support:multidex:1.0.3'
+
 }
 
 apply plugin: 'kotlin-android-extensions'

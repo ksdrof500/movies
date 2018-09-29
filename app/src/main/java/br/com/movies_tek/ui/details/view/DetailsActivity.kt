@@ -16,7 +16,8 @@ import br.com.movies_tek.ui.details.vdos.DetailsHeaderViewData
 import br.com.movies_tek.ui.details.viewmodel.DetailsViewModel
 import br.com.movies_tek.ui.details.viewmodel.DetailsViewModelFactory
 import br.com.movies_tek.utils.KEY_ACTIVITY_ARGS
-import br.com.movies_tek.utils.PopularMovies
+import br.com.movies_tek.MoviesApplication
+import br.com.movies_tek.utils.FirebaseEvents
 import br.com.movies_tek.utils.bindTo
 import br.com.movies_tek.utils.navigateTo
 import paperparcel.PaperParcel
@@ -51,7 +52,7 @@ class DetailsActivity : BaseActivity(), BaseFragment.ActivityListener {
         val factory = DetailsViewModelFactory(movieStorage, args)
         ViewModelProviders.of(this, factory).get(DetailsViewModel::class.java)
     }
-    private val component: ApplicationComponent by lazy { PopularMovies.getAppComponent(this) }
+    private val component: ApplicationComponent by lazy { MoviesApplication.getAppComponent(this) }
 
     private val binding by lazy {
         DataBindingUtil.setContentView<ActivityMovieDetailsBinding>(this, R.layout.activity_movie_details)
@@ -72,7 +73,9 @@ class DetailsActivity : BaseActivity(), BaseFragment.ActivityListener {
         supportActionBar?.title = null
 
         initViewModel()
-        binding.fabDetailsFavorite.setOnClickListener { viewModel.uiEvents.favClicks.accept(Unit) }
+        binding.fabDetailsFavorite.setOnClickListener {
+            firebaseAnalytics.logEvent(FirebaseEvents.BUTTON_FAVORITES, Bundle())
+            viewModel.uiEvents.favClicks.accept(Unit) }
 
         if (savedInstanceState == null) {
             addFragment()
