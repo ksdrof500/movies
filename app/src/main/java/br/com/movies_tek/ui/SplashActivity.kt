@@ -13,7 +13,6 @@ import kotlinx.coroutines.launch
 import org.jetbrains.anko.clearTask
 import org.jetbrains.anko.clearTop
 import org.jetbrains.anko.intentFor
-import org.jetbrains.anko.newTask
 
 
 class SplashActivity : AppCompatActivity() {
@@ -31,8 +30,7 @@ class SplashActivity : AppCompatActivity() {
             delay(resources.getInteger(R.integer.delay_splash).toLong())
             animationUp()
             delay(resources.getInteger(R.integer.delay_splash).toLong())
-            startActivity(intentFor<MainActivity>().clearTask().clearTop().newTask())
-            finish()
+            startActivity(intentFor<MainActivity>().clearTop().clearTask())
         }
     }
 
