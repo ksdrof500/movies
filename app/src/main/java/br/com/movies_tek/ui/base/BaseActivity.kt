@@ -41,7 +41,7 @@ abstract class BaseActivity : AppCompatActivity(), ConnectivityReceiver.Connecti
         MoviesApplication.instance.setConnectivityListener(this)
     }
 
-    fun showNoInternet() {
+    private fun showNoInternet() {
         longSnackbarRed(findViewById(R.id.content), getString(br.com.movies_tek.R.string.error_internet_connection))
     }
 

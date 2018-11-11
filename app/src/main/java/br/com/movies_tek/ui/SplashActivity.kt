@@ -8,15 +8,18 @@ import android.support.v7.app.AppCompatActivity
 import android.view.animation.AnimationUtils
 import br.com.movies_tek.R
 import br.com.movies_tek.databinding.ActivitySplashBinding
-import br.com.movies_tek.ui.login.view.LoginActivity
 import br.com.movies_tek.ui.main.MainActivity
-import kotlinx.coroutines.experimental.delay
-import kotlinx.coroutines.experimental.launch
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
+import org.jetbrains.anko.clearTask
+import org.jetbrains.anko.clearTop
+import org.jetbrains.anko.intentFor
+import org.jetbrains.anko.newTask
 
 
 class SplashActivity : AppCompatActivity() {
 
-    internal val intent by lazy { Intent(this, LoginActivity::class.java) }
     private val bundle by lazy {
         ActivityOptionsCompat.makeCustomAnimation(this,
                 android.R.anim.fade_in, android.R.anim.fade_out).toBundle()
@@ -31,11 +34,11 @@ class SplashActivity : AppCompatActivity() {
 
         animationDown()
 
-        launch {
-            delay(resources.getInteger(R.integer.delay_splash))
+        GlobalScope.launch {
+            delay(resources.getInteger(R.integer.delay_splash).toLong())
             animationUp()
-            delay(resources.getInteger(R.integer.delay_splash))
-            startActivity(intent, bundle)
+            delay(resources.getInteger(R.integer.delay_splash).toLong())
+            startActivity(intentFor<MainActivity>().clearTask().clearTop().newTask())
             finish()
         }
     }

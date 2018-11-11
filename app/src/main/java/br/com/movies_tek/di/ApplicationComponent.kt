@@ -8,7 +8,6 @@ import br.com.movies_tek.di.modules.ApplicationModule
 import br.com.movies_tek.di.modules.MovieServiceModule
 import br.com.movies_tek.ui.main.MainActivity
 import br.com.movies_tek.ui.details.view.DetailsActivity
-import br.com.movies_tek.ui.login.view.LoginActivity
 import dagger.Component
 import javax.inject.Singleton
 
@@ -25,8 +24,6 @@ interface ApplicationComponent {
     val theMovieDbService: TheMovieDbService
 
     fun inject(mainActivity: MainActivity)
-
-    fun inject(loginActivity: LoginActivity)
 
     fun inject(detailsActivity: DetailsActivity)
 }

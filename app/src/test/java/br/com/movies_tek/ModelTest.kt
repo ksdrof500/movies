@@ -31,16 +31,16 @@ import java.util.*
 
 class ModelTest {
 
-    val sharedPrefs: SharedPrefs = Mockito.mock(SharedPrefs::class.java)
-    val theMovieDbService: TheMovieDbService = Mockito.mock(TheMovieDbService::class.java)
-    val movieDao: MovieDao = Mockito.mock(MovieDao::class.java)
-    val movieDb: MovieDb = Mockito.mock(MovieDb::class.java)
-    val movieStorage = MovieStorage(theMovieDbService, movieDb)
+    private val sharedPrefs: SharedPrefs = Mockito.mock(SharedPrefs::class.java)
+    private val theMovieDbService: TheMovieDbService = Mockito.mock(TheMovieDbService::class.java)
+    private val movieDao: MovieDao = Mockito.mock(MovieDao::class.java)
+    private val movieDb: MovieDb = Mockito.mock(MovieDb::class.java)
+    private val movieStorage = MovieStorage(theMovieDbService, movieDb)
 
 
-    val sortOptions = makeSortOptions { "someRandomTitle" }
-    val initialSort = sortOptions[0]
-    val actions: PublishRelay<MainAction> = PublishRelay.create()
+    private val sortOptions = makeSortOptions { "someRandomTitle" }
+    private val initialSort = sortOptions[0]
+    private val actions: PublishRelay<MainAction> = PublishRelay.create()
 
     @Suppress("unused")
     @get:Rule

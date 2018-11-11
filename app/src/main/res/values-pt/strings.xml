@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <string name="app_name">Movie Dog</string>
     <string name="movie_poster">Imagem de pôster de filme</string>
     <string name="movie_video_thumb">Imagem de miniatura de vídeo de filme</string>

@@ -12,7 +12,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="center"
-            android:src="@drawable/background_splash" />
+            android:src="@drawable/background_splash"
+            android:contentDescription="@string/app_name" />
 
         <TextView
             android:id="@+id/text_splash"

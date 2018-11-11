@@ -1,7 +1,6 @@
-package br.com.movies_tek.ui.grid.component
+package br.com.movies_tek
 
 import android.content.Intent
-import br.com.movies_tek.ImmediateSchedulersRule
 import br.com.movies_tek.data.MovieStorage
 import br.com.movies_tek.data.SharedPrefs
 import br.com.movies_tek.data.db.MovieDb
@@ -20,12 +19,12 @@ import org.mockito.Mockito
 
 class IntentionTest {
 
-    val sharedPrefs: SharedPrefs = Mockito.mock(SharedPrefs::class.java)
-    val movieStorage = MovieStorage(Mockito.mock(TheMovieDbService::class.java), Mockito.mock(MovieDb::class.java))
+    private val sharedPrefs: SharedPrefs = Mockito.mock(SharedPrefs::class.java)
+    private val movieStorage = MovieStorage(Mockito.mock(TheMovieDbService::class.java), Mockito.mock(MovieDb::class.java))
 
-    val sortOptions = makeSortOptions { "someRandomTitle" }
-    val uiEvents = MainUiEvents()
-    val sources = MainResources(uiEvents, sharedPrefs, movieStorage)
+    private val sortOptions = makeSortOptions { "someRandomTitle" }
+    private val uiEvents = MainUiEvents()
+    private val sources = MainResources(uiEvents, sharedPrefs, movieStorage)
 
     @Suppress("unused")
     @get:Rule

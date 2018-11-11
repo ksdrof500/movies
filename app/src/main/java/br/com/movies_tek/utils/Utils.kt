@@ -33,7 +33,7 @@ private fun getLayoutWidth(res: Resources, useTwoPane: Boolean): Int = getScreen
 private fun getScreenWidth(res: Resources): Int = res.displayMetrics.widthPixels
 
 fun longSnackbarRed(v: View, text: String) {
-    val ls = longSnackbar(v, text)
+    val ls = v.longSnackbar(text)
     ls.view.setBackgroundColor(Color.parseColor("#FD3838"))
     ls.show()
 }

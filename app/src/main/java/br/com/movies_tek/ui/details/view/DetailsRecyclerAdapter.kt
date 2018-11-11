@@ -17,8 +17,8 @@ import br.com.movies_tek.ui.details.view.viewholders.VideoViewHolder
 import com.jakewharton.rxrelay2.PublishRelay
 
 class DetailsRecyclerAdapter(
-        val videoClicks: PublishRelay<DetailsVideoRowViewData>,
-        val posterListener: PosterLoadListener
+        private val videoClicks: PublishRelay<DetailsVideoRowViewData>,
+        private val posterListener: PosterLoadListener
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     private val movieDetails = mutableListOf<DetailsRowViewData>()

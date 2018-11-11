@@ -1,7 +1,5 @@
-package br.com.movies_tek.ui.grid.component
+package br.com.movies_tek
 
-import br.com.movies_tek.ImmediateSchedulersRule
-import br.com.movies_tek.R
 import br.com.movies_tek.ui.details.view.DetailsActivity
 import br.com.movies_tek.ui.details.view.DetailsArgs
 import br.com.movies_tek.ui.main.component.MainAction
@@ -16,8 +14,8 @@ import org.junit.Test
 
 class NavigationTest {
 
-    val sortOptions = makeSortOptions { "someRandomTitle" }
-    val actions: PublishRelay<MainAction> = PublishRelay.create()
+    private val sortOptions = makeSortOptions { "someRandomTitle" }
+    private val actions: PublishRelay<MainAction> = PublishRelay.create()
 
     @Suppress("unused")
     @get:Rule
