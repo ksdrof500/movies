@@ -60,10 +60,6 @@ class ReviewsItemDecoration(
         canvas.restore()
     }
 
-    override fun getItemOffsets(
-            outRect: Rect,
-            view: View,
-            parent: RecyclerView,
-            state: RecyclerView.State?
-    ) = outRect.set(0, 0, 0, divider.intrinsicHeight)
+    override fun getItemOffsets(outRect: Rect, view: View, parent: RecyclerView, state: RecyclerView.State)
+            = outRect.set(0, 0, 0, divider.intrinsicHeight)
 }

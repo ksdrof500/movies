@@ -11,7 +11,7 @@ class ConnectivityReceiver : BroadcastReceiver() {
         val cm = context
                 .getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
         val activeNetwork = cm.activeNetworkInfo
-        val isConnected = activeNetwork != null && activeNetwork.isConnectedOrConnecting
+        val isConnected = activeNetwork != null && activeNetwork.isConnected
 
         if (connectivityReceiverListener != null) {
             connectivityReceiverListener!!.onNetworkConnectionChanged(isConnected)
