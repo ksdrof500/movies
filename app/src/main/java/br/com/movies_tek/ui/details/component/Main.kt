@@ -1,9 +1,9 @@
 package br.com.movies_tek.ui.details.component
 
-import br.com.movies_tek.utils.NavigationTarget
 import br.com.movies_tek.data.MovieStorage
 import br.com.movies_tek.ui.details.vdos.rows.DetailsVideoRowViewData
 import br.com.movies_tek.ui.details.view.DetailsArgs
+import br.com.movies_tek.utils.NavigationTarget
 import br.com.movies_tek.utils.log
 import com.jakewharton.rxrelay2.PublishRelay
 import io.reactivex.Observable

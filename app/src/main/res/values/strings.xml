@@ -4,7 +4,6 @@
     <string name="movie_video_thumb">Movie video thumbnail image</string>
     <string name="sort_popularity">Most popular</string>
     <string name="sort_rating">Highest rated</string>
-    <string name="sort_release_date">Most recent</string>
     <string name="movie_backdrop">Movie backdrop image</string>
     <string name="header_info">Info</string>
     <string name="shared_transition_details_poster">shared_poster</string>

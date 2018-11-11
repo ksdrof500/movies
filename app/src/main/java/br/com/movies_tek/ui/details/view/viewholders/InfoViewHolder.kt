@@ -3,8 +3,8 @@ package br.com.movies_tek.ui.details.view.viewholders
 import android.support.annotation.IntegerRes
 import android.widget.TextView
 import br.com.movies_tek.databinding.RowDetailsInfoBinding
-import br.com.movies_tek.utils.expandOrCollapse
 import br.com.movies_tek.ui.base.BaseBindingViewHolder
+import br.com.movies_tek.utils.expandOrCollapse
 
 class InfoViewHolder(
         binding: RowDetailsInfoBinding,

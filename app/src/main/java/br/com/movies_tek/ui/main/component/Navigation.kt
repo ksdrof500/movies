@@ -1,10 +1,10 @@
 package br.com.movies_tek.ui.main.component
 
-import br.com.movies_tek.utils.NavigationTarget
 import br.com.movies_tek.R
 import br.com.movies_tek.ui.details.view.DetailsActivity
 import br.com.movies_tek.ui.details.view.DetailsArgs
 import br.com.movies_tek.ui.main.SortOption
+import br.com.movies_tek.utils.NavigationTarget
 import io.reactivex.Observable
 import io.reactivex.functions.BiFunction
 

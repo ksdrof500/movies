@@ -27,7 +27,7 @@ class NavigationTest {
         val observer = navigation.test()
 
         val sortPop = sortOptions[0]
-        val sortFav = sortOptions[3]
+        val sortFav = sortOptions[2]
         val selectedMovie = SelectedMovie(0, "title", "releaseData", "overview", 12.5, "poster", "backdrop", null)
 
         val expectedNavigationTargets = listOf(

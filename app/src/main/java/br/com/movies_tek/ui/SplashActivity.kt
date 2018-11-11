@@ -1,9 +1,7 @@
 package br.com.movies_tek.ui
 
-import android.content.Intent
 import android.databinding.DataBindingUtil
 import android.os.Bundle
-import android.support.v4.app.ActivityOptionsCompat
 import android.support.v7.app.AppCompatActivity
 import android.view.animation.AnimationUtils
 import br.com.movies_tek.R
@@ -19,11 +17,6 @@ import org.jetbrains.anko.newTask
 
 
 class SplashActivity : AppCompatActivity() {
-
-    private val bundle by lazy {
-        ActivityOptionsCompat.makeCustomAnimation(this,
-                android.R.anim.fade_in, android.R.anim.fade_out).toBundle()
-    }
 
     private val binding by lazy {
         DataBindingUtil.setContentView<ActivitySplashBinding>(this, R.layout.activity_splash)

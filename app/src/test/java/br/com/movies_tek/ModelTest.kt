@@ -1,7 +1,5 @@
-package br.com.movies_tek.ui.grid.component
+package br.com.movies_tek
 
-import br.com.movies_tek.ImmediateSchedulersRule
-import br.com.movies_tek.R
 import br.com.movies_tek.data.MovieStorage
 import br.com.movies_tek.data.SharedPrefs
 import br.com.movies_tek.data.db.MovieDb
@@ -60,15 +58,15 @@ class ModelTest {
         observer.assertNoValues()
 
         // expected grid state result emissions
-        val favMovies = getMovieEntities(3)
+        val favMovies = getMovieEntities(2)
         Mockito.`when`(movieDao.getAll()).thenReturn(Flowable.just(favMovies))
         val gridViewData = mapGridRowMovieEntityViewData(favMovies)
         val expectedStates = listOf(
-                MainState(sort = sortOptions[3], loading = true),
-                MainState(sort = sortOptions[3], movies = gridViewData, loading = false)
+                MainState(sort = sortOptions[2], loading = true),
+                MainState(sort = sortOptions[2], movies = gridViewData, loading = false)
         )
 
-        actions.accept(MainAction.SortSelection(sortOptions[3], initialSort))
+        actions.accept(MainAction.SortSelection(sortOptions[2], initialSort))
 
         observer.assertValues(*expectedStates.toTypedArray())
         observer.assertNoErrors()
@@ -96,7 +94,6 @@ class ModelTest {
                 MainState(sort = initialSort, loading = true),
                 MainState(sort = sortOptions[0], movies = popGridViewData, loading = false),
                 MainState(sort = sortOptions[1], movies = popGridViewData, loading = true),
-                MainState(sort = sortOptions[1], movies = ratingGridViewData, loading = false),
                 MainState(sort = sortOptions[2], movies = ratingGridViewData, loading = true)
         )
 
@@ -142,22 +139,22 @@ class ModelTest {
         observer.assertNoValues()
 
         val expectedStates = listOf(
-                MainState(sort = sortOptions[3], loading = true),
+                MainState(sort = sortOptions[2], loading = true),
                 MainState(
-                        sort = sortOptions[3],
+                        sort = sortOptions[2],
                         loading = false,
                         empty = true,
                         snackbar = SnackbarMessage(true, R.string.snackbar_movies_load_failed)
                 ),
                 MainState(
-                        sort = sortOptions[3],
+                        sort = sortOptions[2],
                         loading = false,
                         empty = true,
                         snackbar = SnackbarMessage(false, R.string.snackbar_movies_load_failed)
                 )
         )
 
-        actions.accept(MainAction.SortSelection(sortOptions[3], initialSort))
+        actions.accept(MainAction.SortSelection(sortOptions[2], initialSort))
         actions.accept(MainAction.SnackbarShown)
 
         observer.assertValues(*expectedStates.toTypedArray())

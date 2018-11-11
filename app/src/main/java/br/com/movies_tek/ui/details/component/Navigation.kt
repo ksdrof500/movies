@@ -2,8 +2,8 @@ package br.com.movies_tek.ui.details.component
 
 import android.content.Intent
 import android.net.Uri
-import br.com.movies_tek.utils.NavigationTarget
 import br.com.movies_tek.ui.details.view.DetailsArgs
+import br.com.movies_tek.utils.NavigationTarget
 import io.reactivex.Observable
 
 const val RS_REMOVE_FROM_FAV = 3

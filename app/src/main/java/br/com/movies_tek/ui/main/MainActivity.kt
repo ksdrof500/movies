@@ -5,6 +5,7 @@ import android.content.Intent
 import android.databinding.DataBindingUtil
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
+import br.com.movies_tek.MoviesApplication
 import br.com.movies_tek.R
 import br.com.movies_tek.data.MovieStorage
 import br.com.movies_tek.data.SharedPrefs
@@ -16,7 +17,6 @@ import br.com.movies_tek.ui.base.BaseFragment
 import br.com.movies_tek.ui.main.view.MainFragment
 import br.com.movies_tek.ui.main.viewmodel.MainViewModel
 import br.com.movies_tek.ui.main.viewmodel.MainViewModelFactory
-import br.com.movies_tek.MoviesApplication
 import br.com.movies_tek.utils.bindTo
 import br.com.movies_tek.utils.navigateTo
 import javax.inject.Inject

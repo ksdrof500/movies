@@ -1,11 +1,11 @@
 package br.com.movies_tek.ui.main.component
 
-import br.com.movies_tek.utils.NavigationTarget
 import br.com.movies_tek.data.MovieStorage
 import br.com.movies_tek.data.SharedPrefs
 import br.com.movies_tek.ui.base.ActivityResult
 import br.com.movies_tek.ui.main.Sort
 import br.com.movies_tek.ui.main.view.SelectedMovie
+import br.com.movies_tek.utils.NavigationTarget
 import br.com.movies_tek.utils.log
 import com.jakewharton.rxrelay2.PublishRelay
 import io.reactivex.Observable

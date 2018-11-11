@@ -6,8 +6,8 @@ import br.com.movies_tek.data.db.MovieDb
 import br.com.movies_tek.data.service.TheMovieDbService
 import br.com.movies_tek.di.modules.ApplicationModule
 import br.com.movies_tek.di.modules.MovieServiceModule
-import br.com.movies_tek.ui.main.MainActivity
 import br.com.movies_tek.ui.details.view.DetailsActivity
+import br.com.movies_tek.ui.main.MainActivity
 import dagger.Component
 import javax.inject.Singleton
 

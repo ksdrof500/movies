@@ -4,7 +4,6 @@
     <string name="movie_video_thumb">Imagem de miniatura de vídeo de filme</string>
     <string name="sort_popularity">Mais popular</string>
     <string name="sort_rating">Melhor Avaliado</string>
-    <string name="sort_release_date">Mais recente</string>
     <string name="movie_backdrop">Imagem de pano de fundo do filme</string>
     <string name="header_info">Informação</string>
     <string name="shared_transition_details_poster">Compartilhar</string>

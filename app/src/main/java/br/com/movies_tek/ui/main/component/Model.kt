@@ -90,7 +90,7 @@ fun model(
     val reducers = listOf(snackbars, sortSelections, sortSelectionSave, loadMore, refreshSwipes, favDelete)
     return Observable.merge(reducers)
             .scan(initialState) { state, reducer -> reducer(state) }
-            .skip(1) // skip initial scan emission
+            .skip(1)
             .distinctUntilChanged()
 }
 

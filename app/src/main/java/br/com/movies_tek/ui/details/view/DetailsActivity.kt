@@ -5,6 +5,7 @@ import android.arch.lifecycle.ViewModelProviders
 import android.databinding.DataBindingUtil
 import android.os.Bundle
 import android.support.design.widget.Snackbar
+import br.com.movies_tek.MoviesApplication
 import br.com.movies_tek.R
 import br.com.movies_tek.data.MovieStorage
 import br.com.movies_tek.databinding.ActivityMovieDetailsBinding
@@ -15,9 +16,8 @@ import br.com.movies_tek.ui.details.component.DetailsState
 import br.com.movies_tek.ui.details.vdos.DetailsHeaderViewData
 import br.com.movies_tek.ui.details.viewmodel.DetailsViewModel
 import br.com.movies_tek.ui.details.viewmodel.DetailsViewModelFactory
-import br.com.movies_tek.utils.KEY_ACTIVITY_ARGS
-import br.com.movies_tek.MoviesApplication
 import br.com.movies_tek.utils.FirebaseEvents
+import br.com.movies_tek.utils.KEY_ACTIVITY_ARGS
 import br.com.movies_tek.utils.bindTo
 import br.com.movies_tek.utils.navigateTo
 import paperparcel.PaperParcel

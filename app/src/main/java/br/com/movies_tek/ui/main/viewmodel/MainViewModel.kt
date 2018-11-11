@@ -3,11 +3,11 @@ package br.com.movies_tek.ui.main.viewmodel
 import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.LiveDataReactiveStreams
 import android.arch.lifecycle.ViewModel
-import br.com.movies_tek.utils.NavigationTarget
 import br.com.movies_tek.data.MovieStorage
 import br.com.movies_tek.data.SharedPrefs
 import br.com.movies_tek.ui.main.Sort
 import br.com.movies_tek.ui.main.component.*
+import br.com.movies_tek.utils.NavigationTarget
 import io.reactivex.BackpressureStrategy
 import io.reactivex.Observable
 

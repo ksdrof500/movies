@@ -10,12 +10,12 @@ import android.view.View
 import android.view.ViewGroup
 import br.com.movies_tek.R
 import br.com.movies_tek.databinding.FragmentMovieMainBinding
-import br.com.movies_tek.utils.calcPosterHeight
 import br.com.movies_tek.ui.base.BaseFragment
 import br.com.movies_tek.ui.main.SortOption
 import br.com.movies_tek.ui.main.component.MainState
 import br.com.movies_tek.ui.main.vdos.MainViewData
 import br.com.movies_tek.ui.main.viewmodel.MainViewModel
+import br.com.movies_tek.utils.calcPosterHeight
 import com.mugen.Mugen
 import com.mugen.MugenCallbacks
 

@@ -7,7 +7,7 @@ def keysProperties = new Properties()
 keysProperties.load(new FileInputStream(rootProject.file("keys.properties")))
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 28
     defaultConfig {
         applicationId "br.com.movies_tek"
         minSdkVersion 19
