@@ -7,9 +7,9 @@ import br.com.movies_tek.data.SharedPrefs
 import br.com.movies_tek.ui.main.Sort
 
 class MainViewModelFactory(
-        private val sharedPrefs: SharedPrefs,
+        val sharedPrefs: SharedPrefs,
         val movieStorage: MovieStorage,
-        private val sortOptions: List<Sort>
+        val sortOptions: List<Sort>
 ) : ViewModelProvider.NewInstanceFactory() {
 
     override fun <T : ViewModel> create(modelClass: Class<T>): T {

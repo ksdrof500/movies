@@ -6,7 +6,7 @@ import android.net.Uri
 import android.os.Parcelable
 import android.support.v4.app.ActivityCompat
 import android.support.v4.app.ActivityOptionsCompat
-import android.support.v4.app.FragmentActivity
+import android.support.v7.app.AppCompatActivity
 import android.support.v4.view.ViewCompat
 import android.view.View
 import br.com.movies_tek.R
@@ -40,7 +40,7 @@ sealed class NavigationTarget {
 
 const val KEY_ACTIVITY_ARGS = "KEY_ACTIVITY_ARGS"
 
-fun navigateTo(activity: FragmentActivity, target: NavigationTarget) {
+fun navigateTo(activity: AppCompatActivity, target: NavigationTarget) {
     when (target) {
         is NavigationTarget.Finish -> navigateFinish(activity, target)
         is NavigationTarget.Action -> navigateAction(activity, target)
@@ -49,7 +49,7 @@ fun navigateTo(activity: FragmentActivity, target: NavigationTarget) {
     }
 }
 
-private fun navigateFinish(activity: FragmentActivity, target: NavigationTarget.Finish) {
+private fun navigateFinish(activity: AppCompatActivity, target: NavigationTarget.Finish) {
     if (target.result != null) {
         if (target.data != null) {
             val resultData = Intent().apply {
@@ -63,13 +63,13 @@ private fun navigateFinish(activity: FragmentActivity, target: NavigationTarget.
     ActivityCompat.finishAfterTransition(activity)
 }
 
-private fun navigateAction(activity: FragmentActivity, target: NavigationTarget.Action) {
+private fun navigateAction(activity: AppCompatActivity, target: NavigationTarget.Action) {
     val intent = Intent(target.action, target.uri)
     activity.startActivity(intent)
 }
 
 @SuppressLint("RestrictedApi")
-private fun navigateActivity(activity: FragmentActivity, target: NavigationTarget.Activity) {
+private fun navigateActivity(activity: AppCompatActivity, target: NavigationTarget.Activity) {
     val intent = Intent(activity, target.name).apply {
         putExtra(KEY_ACTIVITY_ARGS, target.args)
     }
@@ -90,7 +90,7 @@ private fun navigateActivity(activity: FragmentActivity, target: NavigationTarge
 }
 
 private fun navigateFragment(
-        activity: FragmentActivity,
+        activity: AppCompatActivity,
         target: NavigationTarget.Fragment,
         container: Int = R.id.container_main
 ) {

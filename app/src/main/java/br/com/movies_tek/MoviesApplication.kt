@@ -1,6 +1,6 @@
 package br.com.movies_tek
 
-import android.app.Activity
+import android.support.v7.app.AppCompatActivity
 import android.app.Application
 import br.com.movies_tek.broadcast.ConnectivityReceiver
 import br.com.movies_tek.di.ApplicationComponent
@@ -13,7 +13,7 @@ class MoviesApplication : Application() {
     companion object {
         lateinit var instance: MoviesApplication
 
-        fun getAppComponent(activity: Activity): ApplicationComponent =
+        fun getAppComponent(activity: AppCompatActivity): ApplicationComponent =
                 (activity.application as MoviesApplication).appComponent
     }
 

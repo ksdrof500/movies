@@ -20,7 +20,7 @@
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark" />
 
     <style name="SubHeader">
-        <item name="android:fontFamily">@string/font_fontFamily_medium</item>
+        <item name="fontFamily">@string/font_fontFamily_medium</item>
         <item name="android:textSize">@dimen/sub_header_text_size</item>
         <item name="android:textColor">?attr/colorPrimary</item>
     </style>
